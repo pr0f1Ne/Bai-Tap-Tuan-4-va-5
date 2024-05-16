@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+#define ll long long
+#define For(i,a,b) for(int i = a ; i <= b ; i++)
+using namespace std;
+int n;
+int main(){
+	cin >> n;
+	int minN = 1000000000;
+	int maxN = -1000000000;
+	int odd_count = 0;
+	int even_sum = 0;
+	For(i,1,n)
+	{
+		int x;
+		cin >> x;
+		if(minN > x) minN = x;
+		if(maxN < x) maxN = x;
+		if(x % 2) odd_count++;
+		if(!(x % 2)) even_sum += x;
+	}
+	cout << minN << endl;
+	cout << maxN << endl;
+	cout << even_sum << endl;
+	cout << odd_count << endl;
+	return 0;
+}

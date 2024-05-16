@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+#define ll long long
+#define For(i,a,b) for(int i = a ; i <= b ; i++)
+using namespace std;
+int n, dem[100005];
+int main(){
+	cin >> n;
+	For(i,1,n)
+	{
+		int x;
+		cin >> x;
+		dem[x]++;
+	}
+	For(i,0,9) cout << i << " " << dem[i] << endl;
+	return 0;
+}
