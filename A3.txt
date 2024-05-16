@@ -1,0 +1,90 @@
+A)
+#include <bits/stdc++.h>
+#define For(i,a,b) for(int i = a ; i <= b; i++)
+using namespace std;
+int main()
+{
+char daytab1[2][12] =
+{
+    {31,28,31,30,31,30,31,31,30,31,30,31},
+    {31,29,31,30,31,30,31,31,30,31,30,31}
+};
+
+For(i,0,1)
+{
+    For(j,0,11)
+    {
+        cout << (int)daytab1[i][j] <<" ";
+    }
+    cout << endl;
+}
+
+char daytab2[2][12] =
+{
+    31,28,31,30,31,30,31,31,30,31,30,31,
+    31,29,31,30,31,30,31,31,30,31,30,31
+};
+
+For(i,0,1)
+{
+    For(j,0,11)
+    {
+        cout << (int)daytab2[i][j] <<" ";
+    }
+    cout << endl;
+}
+return 0;
+}
+B)
+#include <bits/stdc++.h>
+#define For(i,a,b) for(int i = a ; i <= b; i++)
+using namespace std;
+int main()
+{
+char daytab1[2][12] =
+{
+    {31,28,31,30,31,30,31,31,30,31,30,31},
+    {}
+};
+
+For(i,0,1)
+{
+    For(j,0,11)
+    {
+        cout << (int)daytab1[i][j] <<" ";
+    }
+    cout << endl;
+}
+
+char daytab2[2][12] =
+{
+    31,28,31,30,31,30,31,31,30,31,30,31,
+    {}
+};
+
+For(i,0,1)
+{
+    For(j,0,11)
+    {
+        cout << (int)daytab2[i][j] <<" ";
+    }
+    cout << endl;
+}
+return 0;
+}
+Output :
+daytab1:
+31 28 31 30 31 30 31 31 30 31 30 31
+0 0 0 0 0 0 0 0 0 0 0 0
+
+daytab2:
+31 28 31 30 31 30 31 31 30 31 30 31
+0 0 0 0 0 0 0 0 0 0 0 0
+
+Khi chạy chương trình, bạn sẽ thấy rằng các giá trị trong hàng thứ hai của mảng daytab1
+và daytab2 sẽ là giá trị ngẫu nhiên hoặc có thể là 0 nếu không có giá trị nào được khởi tạo mặc định.
+
+C)Trong chương trình này, kích thước của hàng và cột không được chỉ định trong khai báo mảng daytab1 và daytab2.
+Khi chạy chương trình, bạn sẽ nhận được lỗi từ trình biên dịch vì không thể xác định kích thước của mảng từ các
+giá trị được cung cấp.
+Điều này là do trình biên dịch không thể biết số lượng hàng và cột của mảng để phân biệt các phần tử của hàng khác nhau.

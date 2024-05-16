@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+#define ll long long
+#define For(i,a,b) for(int i = a ; i <= b ; i++)
+using namespace std;
+map<int,int> spawn;
+int n;
+int main(){
+	cin >> n;
+	For(i,1,n)
+	{
+		int x;
+		cin >> x;
+		if(spawn[x]){
+			cout << "YES";
+			exit(0);
+		}
+		else spawn[x]++;
+	}
+	cout << "NO";
+	return 0;
+}
